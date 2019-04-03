@@ -98,6 +98,15 @@ export PATH=/usr/local/anaconda3/bin:"$PATH"
 
 I use [dracula theme](https://draculatheme.com/terminal/) for Terminal.app.
 
+# Dropbox
+
+Install via `homebrew`:
+
+```bash
+brew cask install dropbox 
+```
+
+Then enable accessibility in System Preferences: Security & Privacy.
 
 
 
