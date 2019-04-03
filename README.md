@@ -59,8 +59,8 @@ export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 I choose `vi` between `vi` and `emacs` for historical reason. I install the following:
 
 * vim
-* neovim (start by running `nvim` not `neovim` in the terminal.
-* macvim
+* neovim (start by running `nvim` not `neovim` in the terminal).
+* macvim (start by running `mvim` not `macvim` in the terminal, or click the icon in Applications).
 
 ```bash
 brew install vim neovim
