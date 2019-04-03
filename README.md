@@ -54,6 +54,19 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 ```
 
+# Text editor: vim
+
+I choose `vi` between `vi` and `emacs` for historical reason. I install the following:
+
+* vim
+* neovim (start by running `nvim` not `neovim` in the terminal.
+* macvim
+
+```bash
+brew install vim neovim
+brew cask install macvim
+```
+
 
 
 
