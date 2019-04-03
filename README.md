@@ -6,10 +6,23 @@ I have used or am using the following macOS versions:
 
 * Sierra version 10.12.6
 
-# Homebrew
+# Homebrew: package manager
+
+[Homebrew](https://brew.sh/) is my major package manager. I have used to [MacPorts](https://www.macports.org/) before. You can use it as an alternative.
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
+# Git: version control system
+
+I use `git` for version control. 
+
+```bash
+brew install git
+brew install caskroom/cask/sourcetree
+```
+
+
 
 
