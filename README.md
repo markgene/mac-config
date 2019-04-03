@@ -67,6 +67,10 @@ brew install vim neovim
 brew cask install macvim
 ```
 
+# Dracula theme for Terminal.app
+
+I use [dracula theme](https://draculatheme.com/terminal/) for Terminal.app.
+
 
 
 
