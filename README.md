@@ -67,6 +67,19 @@ brew install vim neovim
 brew cask install macvim
 ```
 
+I use Dracula theme for `vim`. I tried "vim+bundle", but it does not work :-( I used "not so clover" method by moving `dracula.vim` to `~/.vim/colors` and add the following lines to `~/.vimrc` file:
+
+```bash
+syntax on
+color dracula
+```
+
+I set font size by adding the line below to `~/.vimrc`:
+
+```bash
+set guifont=Menlo\ Regular:h13
+```
+
 # Dracula theme for Terminal.app
 
 I use [dracula theme](https://draculatheme.com/terminal/) for Terminal.app.
