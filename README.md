@@ -6,6 +6,12 @@ I have used or am using the following macOS versions:
 
 * High Sierra version 10.13.6
 
+# Install Xcode Command Line Tools:
+
+```bash
+xcode-select --install
+```
+
 # Package manager: Homebrew and MacPorts
 
 [Homebrew](https://brew.sh/) is my major package manager. I have used to [MacPorts](https://www.macports.org/) before. You can use it as an alternative.
