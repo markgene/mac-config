@@ -20,6 +20,8 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+Notice: Homebrew will report some messages about "caveats", which usually require manual manipulation, such as add some lines to `.bash_profile`.
+
 # Version control system: git and Sourcetree
 
 I use [`git`](https://git-scm.com/) for version control and [Sourcetree](https://www.sourcetreeapp.com/) GUI.
