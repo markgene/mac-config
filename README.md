@@ -103,6 +103,15 @@ I set font size by adding the line below to `~/.vimrc`:
 set guifont=Menlo\ Regular:h13
 ```
 
+# R and RStudio
+
+Follow [the post](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu) written on 2019/11/11.
+
+```bash
+brew install r
+brew cask install rstudio-preview
+```
+
 # Python
 
 I install Python through Anaconda system and manage Python related issues over there. 
