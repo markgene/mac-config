@@ -4,7 +4,7 @@ Here is the document about my macOS config. If you are interested in config your
 
 I have used or am using the following macOS versions:
 
-* Sierra version 10.12.6
+* High Sierra version 10.13.6
 
 # Package manager: Homebrew and MacPorts
 
@@ -52,6 +52,15 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
 export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
+```
+
+When setup a new machine, I will clone this repo:
+
+```bash
+cd ~
+mkdir Projects
+cd Projects
+git clone https://github.com/markgene/mac-config.git
 ```
 
 # Text editor: vim
