@@ -103,6 +103,14 @@ I set font size by adding the line below to `~/.vimrc`:
 set guifont=Menlo\ Regular:h13
 ```
 
+# VS code 
+
+```bash
+brew cask install visual-studio-code-insiders
+```
+
+To invoke VS code from commmand line, follow the official post [Visual Studio Code on macOS](https://code.visualstudio.com/docs/setup/mac).
+
 # R and RStudio
 
 Follow [the post](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu) written on 2019/11/11.
