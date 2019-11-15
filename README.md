@@ -71,6 +71,12 @@ cd Projects
 git clone https://github.com/markgene/mac-config.git
 ```
 
+Config Git: TBA.
+
+```bash
+git config --list
+```
+
 # Text editor: vim
 
 I choose `vi` between `vi` and `emacs` for historical reason. I install the following:
