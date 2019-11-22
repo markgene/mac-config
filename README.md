@@ -6,7 +6,7 @@ I have used or am using the following macOS versions:
 
 * High Sierra version 10.13.6
 
-# Install Xcode Command Line Tools:
+# Install Xcode Command Line Tools
 
 ```bash
 xcode-select --install
@@ -77,7 +77,32 @@ Config Git: TBA.
 git config --list
 ```
 
-# Text editor: vim
+# R and RStudio
+
+Follow [the post](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu) written on 2019/11/11.
+
+```bash
+brew install r
+brew cask install rstudio-preview
+```
+
+# Python and Conda
+
+I install Python through Anaconda system and manage Python related issues over there. 
+
+```bash
+brew cask install anaconda
+```
+
+To use anaconda, you may need to add the `/usr/local/anaconda3/bin` directory to your `PATH` environment variable, eg (for bash shell):
+
+```bash
+export PATH=/usr/local/anaconda3/bin:"$PATH"
+```
+
+# Text editors
+
+## vim
 
 I choose `vi` between `vi` and `emacs` for historical reason. I install the following:
 
@@ -103,7 +128,7 @@ I set font size by adding the line below to `~/.vimrc`:
 set guifont=Menlo\ Regular:h13
 ```
 
-# VS code 
+## VS code 
 
 ```bash
 brew cask install visual-studio-code-insiders
@@ -111,34 +136,13 @@ brew cask install visual-studio-code-insiders
 
 To invoke VS code from commmand line, follow the official post [Visual Studio Code on macOS](https://code.visualstudio.com/docs/setup/mac).
 
-# R and RStudio
+# Apps
 
-Follow [the post](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu) written on 2019/11/11.
-
-```bash
-brew install r
-brew cask install rstudio-preview
-```
-
-# Python
-
-I install Python through Anaconda system and manage Python related issues over there. 
-
-```bash
-brew cask install anaconda
-```
-
-To use anaconda, you may need to add the `/usr/local/anaconda3/bin` directory to your `PATH` environment variable, eg (for bash shell):
-
-```bash
-export PATH=/usr/local/anaconda3/bin:"$PATH"
-```
-
-# Dracula theme for Terminal.app
+## Dracula theme for Terminal.app
 
 I use [dracula theme](https://draculatheme.com/terminal/) for Terminal.app.
 
-# Dropbox
+## Dropbox
 
 Install via `homebrew`:
 
@@ -147,6 +151,8 @@ brew cask install dropbox
 ```
 
 Then enable accessibility in System Preferences: Security & Privacy.
+
+## Firefox 
 
 
 
