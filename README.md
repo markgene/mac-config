@@ -22,6 +22,13 @@ xcode-select --install
 
 Notice: Homebrew will report some messages about "caveats", which usually require manual manipulation, such as add some lines to `.bash_profile`.
 
+# Common tools and libraries
+
+```bash
+brew install openssl
+```
+
+
 # Version control system: git and Sourcetree
 
 I use [`git`](https://git-scm.com/) for version control and [Sourcetree](https://www.sourcetreeapp.com/) GUI.
