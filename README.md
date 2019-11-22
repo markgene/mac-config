@@ -144,7 +144,7 @@ I use [dracula theme](https://draculatheme.com/terminal/) for Terminal.app.
 
 ## Dropbox
 
-Install via `homebrew`:
+I use Dropbox for file hosting service for historical reason. Install via `homebrew`:
 
 ```bash
 brew cask install dropbox 
@@ -153,6 +153,12 @@ brew cask install dropbox
 Then enable accessibility in System Preferences: Security & Privacy.
 
 ## Firefox 
+
+I use Firefox Nightly as my major browser which the most unstable version. Other versions are stable, beta, and developer edition (see [here](https://www.mozilla.org/en-US/firefox/channel/desktop/)).
+
+```bash
+brew cask install firefox-nightly 
+```
 
 
 
