@@ -97,8 +97,56 @@ brew cask install anaconda
 To use anaconda, you may need to add the `/usr/local/anaconda3/bin` directory to your `PATH` environment variable, eg (for bash shell):
 
 ```bash
-export PATH=/usr/local/anaconda3/bin:"$PATH"
+export PATH="$PATH":/usr/local/anaconda3/bin
 ```
+
+## Setup channels
+
+```bash
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+```
+
+## Initial an environment
+
+```bash
+conda env create -f conda-env/ds.yml
+source activate ds
+```
+
+The first time to initiate an environment, a message of conda init will pop-up. Follow the instruction.
+
+```bash
+$ conda activate ds
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+```
+
+See [ericmjl/conda-envs](https://github.com/ericmjl/conda-envs) for some example environment yml files.
+
+## Update an environment
+
+```bash
+conda env update -f conda-env/ds.yml  # this is where the update magic happens
+source activate ds
+```
+
 
 # Text editors
 

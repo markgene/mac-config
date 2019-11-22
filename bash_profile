@@ -13,6 +13,9 @@ export CPPFLAGS="-I/usr/local/opt/openblas/include"
 export LDFLAGS="-L/usr/local/opt/readline/lib"
 export CPPFLAGS="-I/usr/local/opt/readline/include"
 
+######################### Anaconda ########################
+export PATH="$PATH":/usr/local/anaconda3/bin
+
 ########################## Git ############################
 # Enable tab completion
 source ~/git-completion.bash
