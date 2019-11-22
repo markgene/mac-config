@@ -1,0 +1,89 @@
+---
+title: "Install R Packages"
+description: |
+  A personal documentation.
+author:
+  - name: Mark Chen
+    url: https://markgene.github.io/
+    affiliation: St Jude Children's Research Hospital
+    affiliation_url: https://www.stjude.org/
+date: "`r Sys.Date()`"
+output: 
+  radix::radix_article:
+    toc: true
+    toc_depth: 3
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+```
+
+# Packages from CRAN
+
+```{r}
+##################### Packages from CRAN
+
+cran_pkgs <-
+  c(
+    "BiocManager",
+    "covr",
+    "devtools",
+    "httr",
+    "knitr",
+    "rematch",
+    "rematch2",
+    "rmarkdown",
+    "selectr",
+    "tidyverse",
+    "usethis",
+    "webshot"
+  )
+
+install.packages(cran_pkgs[!cran_pkgs %in% installed.packages()],
+                 dependencies = c("Depends", "Suggests"))
+
+webshot::install_phantomjs()
+```
+
+# GitHub
+
+```{r}
+github_packages <- c(
+  "ropenscilabs/available",
+  "rstudio/blogdown",
+  "rstudio/bookdown",
+  "jennybc/cellranger",
+  "ropenscilabs/skimr",
+  "ismayc/thesisdown",
+  "tidymodels/tidymodels"
+)
+
+devtools::install_github(
+  github_packages[!github_packages %in% installed.packages()],
+  force = TRUE,
+  dependencies = c("Depends", "Suggests"),
+)
+```
+
+# Bioconductor
+
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install()
+
+bioc_packages <- c(
+  "scRNAseq", 
+  "simpleSingleCell")
+tmp <- sapply(
+  bioc_packages[! bioc_packages %in% installed.packages()],
+  function(pkg) BiocManager::install(pkg, version = "devel")
+)
+```
+
+
+
+
+
+
