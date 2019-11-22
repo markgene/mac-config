@@ -69,7 +69,9 @@ github_packages <- c(
   "jennybc/cellranger",
   "ropenscilabs/skimr",
   "ismayc/thesisdown",
-  "tidymodels/tidymodels"
+  "tidymodels/tidymodels",
+  "markgene/yamat",
+  "markgene/yamatCN"
 )
 
 # devtools::install_github(
@@ -93,6 +95,10 @@ BiocManager::install()
 
 bioc_packages <- c(
   "conumee",
+  "GenVisR",
+  "IlluminaHumanMethylationEPICanno.ilm10b2.hg19",
+  "IlluminaHumanMethylationEPICanno.ilm10b3.hg19",
+  "IlluminaHumanMethylationEPICanno.ilm10b4.hg19",
   "minfi"
   # "scRNAseq", 
   # "simpleSingleCell"
