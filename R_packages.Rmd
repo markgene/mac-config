@@ -19,36 +19,49 @@ output:
 knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
-# Packages from CRAN
+# In one-go
+
+This never works :-(
+
+## Packages from CRAN
 
 ```{r}
 ##################### Packages from CRAN
-
 cran_pkgs <-
   c(
     "BiocManager",
+    "coin",
     "covr",
     "devtools",
     "httr",
     "knitr",
+    "party",
     "rematch",
     "rematch2",
     "rmarkdown",
     "selectr",
+    "stringr",
     "tidyverse",
     "usethis",
     "webshot"
   )
 
-install.packages(cran_pkgs[!cran_pkgs %in% installed.packages()],
-                 dependencies = c("Depends", "Suggests"))
+# install.packages(cran_pkgs[!cran_pkgs %in% installed.packages()],
+#                  dependencies = c("Depends", "Suggests"))
+
+install.packages(cran_pkgs[!cran_pkgs %in% installed.packages()])
 
 webshot::install_phantomjs()
 ```
 
-# GitHub
+## GitHub
 
 ```{r}
+package_names <- function(x) {
+  stringr::str_extract(x, "\\/.*$") %>%
+    stringr::str_remove(., "^/")
+}
+
 github_packages <- c(
   "ropenscilabs/available",
   "rstudio/blogdown",
@@ -59,14 +72,19 @@ github_packages <- c(
   "tidymodels/tidymodels"
 )
 
+# devtools::install_github(
+#   github_packages[!package_names(github_packages) %in% installed.packages()],
+#   force = TRUE,
+#   dependencies = c("Depends", "Suggests")
+# )
+
 devtools::install_github(
-  github_packages[!github_packages %in% installed.packages()],
-  force = TRUE,
-  dependencies = c("Depends", "Suggests"),
+  github_packages[!package_names(github_packages) %in% installed.packages()],
+  force = TRUE
 )
 ```
 
-# Bioconductor
+## Bioconductor
 
 ```{r}
 if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -74,15 +92,41 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install()
 
 bioc_packages <- c(
-  "scRNAseq", 
-  "simpleSingleCell")
-tmp <- sapply(
+  "conumee",
+  "minfi"
+  # "scRNAseq", 
+  # "simpleSingleCell"
+)
+
+# ._ <- sapply(
+#   bioc_packages[! bioc_packages %in% installed.packages()],
+#   function(pkg) BiocManager::install(pkg, version = "devel")
+# )
+
+._ <- sapply(
   bioc_packages[! bioc_packages %in% installed.packages()],
-  function(pkg) BiocManager::install(pkg, version = "devel")
+  function(pkg) BiocManager::install(pkg)
 )
 ```
 
+# Log
 
+```{r}
+######################### 2019-11-22 ########################
+install.packages("BiocManager")
+install.packages("knitr")
+install.packages("webshot")
+# Install openssl by homebrew before installing the R package
+install.packages("openssl")
+install.packages("httr")
+install.packages("usethis")
+install.packages("covr")
+install.packages("devtools")
+install.packages("coin")
+install.packages("party")
+# Tidyverse
+install.packages("tidyverse")
+```
 
 
 
