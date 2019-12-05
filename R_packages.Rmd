@@ -99,7 +99,8 @@ bioc_packages <- c(
   "IlluminaHumanMethylationEPICanno.ilm10b2.hg19",
   "IlluminaHumanMethylationEPICanno.ilm10b3.hg19",
   "IlluminaHumanMethylationEPICanno.ilm10b4.hg19",
-  "minfi"
+  "minfi",
+  "minfiDataEPIC"
   # "scRNAseq", 
   # "simpleSingleCell"
 )
