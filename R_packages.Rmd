@@ -32,9 +32,11 @@ cran_pkgs <-
     "BiocManager",
     "coin",
     "covr",
+    "DataExplorer",
     "devtools",
     "httr",
     "knitr",
+    "mice",
     "party",
     "rematch",
     "rematch2",
@@ -133,6 +135,10 @@ install.packages("coin")
 install.packages("party")
 # Tidyverse
 install.packages("tidyverse")
+
+install.packages("DataExplorer")
+install.packages("mice")
+
 ```
 
 
