@@ -388,3 +388,9 @@ Mac asked to change default to zsh.
 ```sh
 chsh -s /bin/zsh
 ```
+
+Change it back anytime
+
+```sh
+chsh -s /bin/bash
+```
