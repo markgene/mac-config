@@ -13,6 +13,7 @@ brew install openssl
 brew install vim
 brew install git
 brew install luarocks
+brew install zsh
 
 # Brew cask
 brew cask install visual-studio-code
@@ -21,6 +22,7 @@ brew cask install anaconda
 brew cask install macvim
 brew cask install firefox
 brew cask install rstudio
+brew cask install iterm2
 
 # Clean Up Brew
 brew cleanup

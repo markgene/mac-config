@@ -9,6 +9,7 @@ brew cask install visual-studio-code
 brew cask install dropbox
 brew cask install macvim
 brew cask install firefox
+brew cask install iterm2
 ```
 
 ## vim, git, openssl
@@ -373,4 +374,17 @@ Install from pkg on [official website](https://cran.r-project.org/bin/macosx/). 
 
 ```sh
 brew cask install rstudio
+```
+
+## Install zsh
+
+
+```sh
+brew install zsh
+```
+
+Mac asked to change default to zsh.
+
+```sh
+chsh -s /bin/zsh
 ```
