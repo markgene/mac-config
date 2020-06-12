@@ -10,6 +10,7 @@ brew cask install dropbox
 brew cask install macvim
 brew cask install firefox
 brew cask install iterm2
+brew cask install zotero
 ```
 
 ## vim, git, openssl

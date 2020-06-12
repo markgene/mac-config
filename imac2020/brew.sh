@@ -23,6 +23,7 @@ brew cask install macvim
 brew cask install firefox
 brew cask install rstudio
 brew cask install iterm2
+brew cask install zotero
 
 # Clean Up Brew
 brew cleanup
