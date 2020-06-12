@@ -394,3 +394,14 @@ Change it back anytime
 ```sh
 chsh -s /bin/bash
 ```
+
+## Config git
+
+Follow <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+
+```
+git config --global user.name "Mark J Chen"
+git config --global user.email "mjchen.gene@gmail.com"
+git config --global core.editor vim
+git config --list
+```
