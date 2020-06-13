@@ -11,6 +11,7 @@ brew cask install macvim
 brew cask install firefox
 brew cask install iterm2
 brew cask install zotero
+brew install hugo
 ```
 
 ## vim, git, openssl
@@ -376,6 +377,8 @@ Install from pkg on [official website](https://cran.r-project.org/bin/macosx/). 
 ```sh
 brew cask install rstudio
 ```
+
+Setup RStudio referring to <https://rstats.wtf/save-source.html>.
 
 ## Install zsh
 
