@@ -1,0 +1,50 @@
+# You can use this file to create a conda environment for this pipeline:
+#   conda env create -f ngs.yml
+# Source is name: ngs-0.0.1
+name: ngs
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  ## conda-forge packages
+  - gawk
+  - r-base
+  - r-optparse
+  - r-rcolorbrewer
+  - r-ggplot2
+  - r-reshape2
+  - r-scales
+  - r-pheatmap
+  - r-lattice
+  - r-upsetr
+  - r-xfun
+
+  ## bioconda packages
+  - fastqc
+  - trim-galore
+  - bowtie2
+  - samtools
+  - picard
+  - bamtools
+  - pysam
+  - bedtools
+  - ucsc-bedgraphtobigwig
+  - deeptools
+  - macs2
+  - homer
+  - subread
+  - phantompeakqualtools
+  - preseq
+  - multiqc
+  - bioconductor-deseq2
+  - bioconductor-vsn
+
+  # - blas
+  ## Pip
+  # - pip
+  # - pip:
+  #   - scipy==0.16.0
+  #   - scikit-learn==0.17
+  #   - matplotlib==1.4.3
+  #   - numpy==1.16.0
