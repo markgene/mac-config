@@ -37,8 +37,8 @@ dependencies:
   - phantompeakqualtools
   - preseq
   - multiqc
-  - bioconductor-deseq2
-  - bioconductor-vsn
+  # - bioconductor-deseq2
+  # - bioconductor-vsn
 
   # - blas
   ## Pip

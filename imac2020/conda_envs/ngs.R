@@ -24,8 +24,8 @@ bioc_pkgs <- c(
   "AnnotationDbi",
   "EnsDb.Hsapiens.v86",
   "AnnotationHub",
-  "ensembldb"
-  # "pathview",
+  "ensembldb",
+  "apeglm"
   # "DEGreport",
   # "tximport",
 )
