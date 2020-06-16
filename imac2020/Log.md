@@ -410,3 +410,8 @@ git config --global core.editor vim
 git config --list
 ```
 
+## XQuartz
+
+```sh
+brew cask install xquartz
+```
