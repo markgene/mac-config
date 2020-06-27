@@ -11,6 +11,7 @@ brew cask install macvim
 brew cask install firefox
 brew cask install iterm2
 brew cask install zotero
+brew cask install igv
 brew install hugo
 ```
 

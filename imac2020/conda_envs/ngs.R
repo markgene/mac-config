@@ -14,18 +14,21 @@ install.packages(pkgs_to_be_installed)
 
 # Install from Bioconductor
 bioc_pkgs <- c(
-  "DESeq2",
-  "clusterProfiler",
-  "DOSE",
-  "org.Hs.eg.db",
-  "pathview",
-  "DEGreport",
-  "tximport",
   "AnnotationDbi",
-  "EnsDb.Hsapiens.v86",
   "AnnotationHub",
+  "clusterProfiler",
+  "DEGreport",
+  "DESeq2",
+  "DOSE",
+  "EnsDb.Hsapiens.v86",
   "ensembldb",
-  "apeglm"
+  "apeglm",
+  "ChIPseeker",
+  "org.Hs.eg.db",
+  "org.Mm.eg.db",
+  "pathview",
+  "TxDb.Mmusculus.UCSC.mm10.knownGene",
+  "tximport"
   # "DEGreport",
   # "tximport",
 )
