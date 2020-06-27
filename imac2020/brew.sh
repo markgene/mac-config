@@ -15,6 +15,7 @@ brew install git
 brew install luarocks
 brew install zsh
 brew install hugo
+brew install tree
 
 # Brew cask
 brew cask install visual-studio-code

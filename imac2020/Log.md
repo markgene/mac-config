@@ -13,6 +13,7 @@ brew cask install iterm2
 brew cask install zotero
 brew cask install igv
 brew install hugo
+brew install tree
 ```
 
 ## vim, git, openssl
