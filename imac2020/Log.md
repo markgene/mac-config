@@ -14,6 +14,7 @@ brew cask install zotero
 brew cask install igv
 brew install hugo
 brew install tree
+brew install webp
 ```
 
 ## vim, git, openssl

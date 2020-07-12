@@ -16,6 +16,7 @@ brew install luarocks
 brew install zsh
 brew install hugo
 brew install tree
+brew install webp
 
 # Brew cask
 brew cask install visual-studio-code
