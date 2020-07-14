@@ -1,0 +1,14 @@
+# You can use this file to create a conda environment for this pipeline:
+#   conda env create -f ngs.yml
+# Source is name: qiime-0.0.1
+name: qiime
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=2.7
+  - qiime
+  - matplotlib=1.4.3
+  - mock
+  - nose
