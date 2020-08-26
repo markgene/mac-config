@@ -19,6 +19,7 @@ dependencies:
   - r-lattice
   - r-upsetr
   - r-xfun
+  - tree
 
   ## bioconda packages
   - fastqc
