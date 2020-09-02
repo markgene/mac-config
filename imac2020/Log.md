@@ -16,6 +16,7 @@ brew install hugo
 brew install tree
 brew install webp
 brew install imagemagick
+brew install gnu-sed
 ```
 
 ## vim, git, openssl
