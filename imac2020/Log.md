@@ -15,6 +15,7 @@ brew cask install igv
 brew install hugo
 brew install tree
 brew install webp
+brew install imagemagick
 ```
 
 ## vim, git, openssl

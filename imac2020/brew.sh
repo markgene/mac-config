@@ -17,6 +17,7 @@ brew install zsh
 brew install hugo
 brew install tree
 brew install webp
+brew install imagemagick
 
 # Brew cask
 brew cask install visual-studio-code
