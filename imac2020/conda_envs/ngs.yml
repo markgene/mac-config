@@ -38,6 +38,7 @@ dependencies:
   - phantompeakqualtools
   - preseq
   - multiqc
+  - r-ngsplot
   # - bioconductor-deseq2
   # - bioconductor-vsn
 
