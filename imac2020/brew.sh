@@ -19,6 +19,7 @@ brew install tree
 brew install webp
 brew install imagemagick
 brew install gnu-sed
+brew install java
 
 # Brew cask
 brew cask install visual-studio-code

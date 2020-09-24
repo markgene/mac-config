@@ -17,6 +17,7 @@ brew install tree
 brew install webp
 brew install imagemagick
 brew install gnu-sed
+brew install java
 ```
 
 ## vim, git, openssl
