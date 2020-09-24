@@ -386,6 +386,32 @@ brew cask install rstudio
 
 Setup RStudio referring to <https://rstats.wtf/save-source.html>.
 
+## Install Java
+
+Install Java with Homebrew, but need to add it to PATH.
+
+```sh
+brew install java
+```
+
+```
+==> Caveats
+For the system Java wrappers to find this JDK, symlink it with
+  sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
+openjdk is keg-only, which means it was not symlinked into /usr/local,
+because it shadows the macOS `java` wrapper.
+
+If you need to have openjdk first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> /Users/jchen4/.bash_profile
+
+For compilers to find openjdk you may need to set:
+  export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+
+==> Summary
+🍺  /usr/local/Cellar/openjdk/14.0.1: 634 files, 319.1MB
+```
+
 ## Install zsh
 
 
