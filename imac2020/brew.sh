@@ -33,6 +33,7 @@ brew cask install iterm2
 brew cask install zotero
 brew cask install xquartz
 brew cask install igv
+brew cask install cytoscape
 
 # Clean Up Brew
 brew cleanup
