@@ -1,0 +1,12 @@
+# You can use this file to create a conda environment for this pipeline:
+#   conda env create -f mc006.yml
+# Source is name: mc006-0.0.1
+name: mc006
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - tree
+  - r-essentials 
+  - r-base=4.0.3
