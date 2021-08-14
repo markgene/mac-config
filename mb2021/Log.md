@@ -44,7 +44,23 @@ cp mb2021/.zshrc ~/.zshrc
 
 See private blog post of conda log.
 
+## Env `r4.1-py39`
+
 ```sh
-conda
+conda create -n r4.1-py39 python=3.9
+conda activate r4.1-py39
+# Some R packages depend on Cairo
+conda install -c anaconda cairo
+# R
+conda install -c conda-forge r-base r-essentials r-cairo r-textshaping r-proj4 r-cli r-devtools r-tidyverse r-tinytex
+conda install -c bioconda bioconductor-diffbind
+# Unsovable conflicts. Fail to install Monocle3 with Conda in this env.
+#conda install -c bioconda r-monocle3 
+# Conga dependency
+conda install seaborn scikit-learn statsmodels numba pytables
+conda install -c conda-forge python-igraph leidenalg louvain notebook imagemagick
+conda install -c intel tbb # optional
+pip install scanpy
+pip install fastcluster # optional
 ```
 
