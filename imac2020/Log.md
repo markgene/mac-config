@@ -21,6 +21,7 @@ brew install imagemagick
 brew install gnu-sed
 brew install java
 brew install hdf5
+brew install git-lfs
 ```
 
 ## vim, git, openssl
