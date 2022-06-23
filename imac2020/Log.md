@@ -14,6 +14,7 @@ brew cask install zotero
 brew cask install igv
 brew cask install cytoscape
 brew cask install jalview
+brew install --cask mactex
 brew install hugo
 brew install tree
 brew install webp
@@ -23,6 +24,8 @@ brew install java
 brew install hdf5
 brew install git-lfs
 ```
+
+Note on Latex. I used to use tinytex, but it does not always work well. It took a long time to download and install MacTex, since it is quite big. But it is worth the time.
 
 ## vim, git, openssl
 

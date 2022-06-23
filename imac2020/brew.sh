@@ -36,6 +36,7 @@ brew cask install xquartz
 brew cask install igv
 brew cask install cytoscape
 brew cask install jalview
+brew install --cask mactex
 
 # Clean Up Brew
 brew cleanup
