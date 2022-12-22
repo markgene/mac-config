@@ -70,3 +70,9 @@ curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion
 cp mba2022/.zshrc ~/.zshrc
 ```
 
+# Git config
+
+```{bash}
+git config --global user.name "Mark J Chen"
+git config --global user.email "mjchen.gene@gmail.com"
+```
