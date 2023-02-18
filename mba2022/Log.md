@@ -35,8 +35,6 @@ I did not meet the problem "Apple cannot check it for malicious software" this t
 
 # Conda 
 
-See private blog post of conda log.
-
 ## Env `r42-py311`
 
 ```{bash r42-py311-mba22-conda}
@@ -213,3 +211,18 @@ git config --global user.name "Mark J Chen"
 git config --global user.email "mjchen.gene@gmail.com"
 ```
 
+# Install Quarto (failed)
+
+I tried to install Quarto using 1) pkg downloaded from official website and 2) homebrew. They give the same error message:
+
+```default
+(base) mjchen@ bin % quarto check                
+
+[✓] Checking Quarto installation......OK
+      Version: 1.2.335
+      Path: /Applications/quarto/bin
+
+[✓] Checking basic markdown render....OK
+
+ERROR: NotFound: No such file or directory (os error 2), remove '/Users/mjchen/Library/Caches/quarto/sass/397ef2e52d54cf686e4908b90039e9db.css'
+```
