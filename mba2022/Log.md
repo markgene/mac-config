@@ -226,3 +226,5 @@ I tried to install Quarto using 1) pkg downloaded from official website and 2) h
 
 ERROR: NotFound: No such file or directory (os error 2), remove '/Users/mjchen/Library/Caches/quarto/sass/397ef2e52d54cf686e4908b90039e9db.css'
 ```
+
+Solution: I restart my Mac and it then works. 
